@@ -29,7 +29,7 @@ class TodoPage extends StatelessWidget {
                             );
                           }
                         }
-                        
+                        return Text("no date selected");
                       }
                     )
                   ],
