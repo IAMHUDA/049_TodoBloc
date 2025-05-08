@@ -151,8 +151,12 @@ class TodoPage extends StatelessWidget {
                                   ],
                                 ),
                                 Checkbox(
-                                  value: , 
-                                  onChanged: )
+                                  value: todo.isCompleted, 
+                                  onChanged: (value){
+                                    context.read<TodoBloc>().add(
+                                      TodoEventCompleted(index: index)
+                                    );
+                                  })
                               ],
                             ),
                           );
