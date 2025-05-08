@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:todoapp/bloc/todo_bloc.dart';
 
 class TodoPage extends StatelessWidget {
   const TodoPage({super.key});
@@ -12,7 +14,21 @@ class TodoPage extends StatelessWidget {
         child: Padding(padding: EdgeInsets.all(16.0), 
         child: Column(
           children: [
-            
+            Text("Todo List"),
+            Row(
+              children: [
+                Column(
+                  children: [
+                    Text('Selected date'),
+                    BlocBuilder<TodoBloc,TodoState>(
+                      builder: (context,state) {
+                        
+                      }
+                    )
+                  ],
+                )
+              ],
+            )
           ],
         )),
       ),
