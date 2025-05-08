@@ -22,6 +22,9 @@ class TodoPage extends StatelessWidget {
                     Text('Selected date'),
                     BlocBuilder<TodoBloc,TodoState>(
                       builder: (context,state) {
+                        if(state is TodoLoaded){
+                          
+                        }
                         
                       }
                     )
