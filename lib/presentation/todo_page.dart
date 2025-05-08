@@ -49,9 +49,10 @@ class TodoPage extends StatelessWidget {
                               TodoSelectDate(date: selectedDate),
                             );
                           }
-                        });
+                        }
+                      );
                     }, 
-                    child: ))
+                    child: Text("select date")))
               ],
             )
           ],
